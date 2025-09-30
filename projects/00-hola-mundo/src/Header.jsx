@@ -1,4 +1,4 @@
-import 'Header.css';
+import './Header.css';
 import { useNavigate, useLocation } from "react-router-dom";
 import BotonesBotHeader from './BotonesBotHeader';
 import { categorias } from './ConfigCategorias';
