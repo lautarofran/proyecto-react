@@ -1,0 +1,21 @@
+.header-pagina {
+  background: #282c34;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header-pagina button {
+  margin: 0 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #61dafb;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.header-pagina button:hover {
+  background: #21a1f1;
+}

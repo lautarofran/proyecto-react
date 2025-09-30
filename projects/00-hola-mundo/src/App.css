@@ -1,0 +1,25 @@
+.fade-wrapper {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.fade-wrapper.fade-in {
+  opacity: 1;
+}
+
+.fade-wrapper.fade-out {
+  opacity: 0;
+}
+.productos-wrapper {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.productos-wrapper.slide-out {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.productos-wrapper.slide-in {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,61 @@
+.contenedorTarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 0.2fr); /* Mantiene 3 columnas */
+  gap: 14px; /* Reduce la separación entre filas y columnas */
+  max-width: var(--lqd-site-width, 1140px);
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: center;
+}
+
+.tarjeta {
+  position: relative;
+  width: 130px; /* Más pequeña */
+  height: 130px; /* Fija la altura para que sea cuadrada */
+  background: var(--wp--preset--color--white, #fff);
+  border-radius: 8px; /* Menos curva para que se vea más compacta */
+  box-shadow: var(--wp--preset--shadow--natural, 4px 4px 6px rgba(0, 0, 0, 0.15));
+  padding: 1.3rem; /* Reduce el espacio interno */
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.tarjetaTitulo{
+    color: #4682b4;
+    text-align: center;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+}
+
+.tarjetaReposo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.2rem;
+}
+
+.tarjetaReposo h4 {
+  font-family: var(--mont, "Montserrat", sans-serif);
+  font-size: var(--wp--preset--font-size--medium, 14px);
+  color: var(--color-font, #626974);
+}
+
+.tarjetaHover {
+  position: absolute;
+  inset: 0;
+  background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple, rgba(39,174,245,0.95));
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.tarjeta:hover .tarjetaHover {
+  opacity: 1;
+}
