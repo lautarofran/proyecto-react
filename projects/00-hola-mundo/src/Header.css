@@ -1,64 +1,71 @@
 .header-pagina {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    /* ahora en columnas */
     align-items: center;
-    padding: 20px;
+    padding: 25px 0; /* altura inicial */
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
+/* Header más angosto al hacer scroll */
+.header-pagina.scrolled {
+    padding: 5px 0;
+}
+
+/* Texto-header desaparece */
+.header-pagina.scrolled .texto-header {
+    display: none;
+}
+
+/* Top-bar (logos) */
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    transition: all 0.3s ease;
 }
 
+/* Logo normal */
 .logo img {
-    height: 120px;
+    height: 100px;
+    width: auto;
+    transition: height 0.3s ease;
+}
+
+/* Logo más pequeño al scrollear */
+.header-pagina.scrolled .logo img {
+    height: 70px;
+}
+
+/* Bot-bar normal */
+.bot-bar {
+    display: flex;
+    justify-content: center; /* horizontalmente centrado */
+    width: 80%;
+    transition: transform 0.3s ease, margin 0.3s ease;
+    margin-top: 20px; /* separación inicial */
     width: auto;
 }
 
-.nav-centro {
+/* Botones suben al centro cuando scrolled */
+.header-pagina.scrolled .bot-bar {
+    transform: translateY(-35px); /* sube suavemente 15px */
+    margin-top: 0;
+}
+
+.nav-menu {
     display: flex;
     gap: 10px;
-    /* separación entre botones */
 }
 
-.header-pagina button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 6px;
-    background: #61dafb;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.header-pagina button:hover {
-    background: #21a1f1;
-}
-
-.texto-header {
-    margin-top: 20px;
-    text-align: center;
-    max-width: 800px;
-}
-
-.texto-header h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.texto-header p {
-    margin: 5px 0;
-    font-size: 1rem;
-}
-
-.bot-bar{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Responsive para celular */
+/* Responsive */
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
@@ -67,5 +74,13 @@
 
     .logo img {
         height: 90px;
+    }
+
+    .header-pagina.scrolled .logo img {
+        height: 60px;
+    }
+
+    main, .productos {
+        margin-top: 180px;
     }
 }

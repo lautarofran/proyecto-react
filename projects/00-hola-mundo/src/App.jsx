@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./Header";
@@ -8,16 +8,18 @@ import PaginaCategoria from "./PaginaCategoria";
 export default function App() {
   return (
     <Router>
-      <Header /> {/* Siempre visible */}
-      
-      <Routes>
-        <Route path="/" element={<Navigate to="/congelados" />} />
-        <Route path="/congelados" element={<PaginaCategoria categoria="congelados" />} />
-        <Route path="/secos" element={<PaginaCategoria categoria="secos" />} />
-        {/* Si agregás más categorías, solo crear nuevas rutas */}
-      </Routes>
-      
-      <Footer /> {/* Siempre visible */}
+      <Header />
+
+      <div className="rutas">
+        <Routes>
+          <Route path="/" element={<Navigate to="/congelados" />} />
+          <Route path="/congelados" element={<PaginaCategoria categoria="congelados" />} />
+          <Route path="/secos" element={<PaginaCategoria categoria="secos" />} />
+        </Routes>
+      </div>
+
+      <Footer />
     </Router>
+
   );
 }

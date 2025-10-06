@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import logo from './assets/logo/helasur.jpg';
+import logoCong from './assets/logo/helasur-sin-fondo.png';
+import logoSeco from './assets/logo/helasur-sin-fondo-seco.png';
 
 export default function Footer() {
   return (
@@ -10,7 +11,8 @@ export default function Footer() {
         <div className="footer-column">
           <h2>Empresa</h2>
           <div id="logoFooter">
-            <img src={logo} alt="Logo de la empresa" />
+            <img src={logoCong} alt="Logo de la empresa" />
+            <img src={logoSeco} alt="Logo de la empresa" />
           </div>
         </div>
 

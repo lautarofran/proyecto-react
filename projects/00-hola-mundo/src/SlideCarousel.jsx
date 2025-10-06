@@ -33,7 +33,7 @@ export default function SlideCarousel({ categoria = "congelados", interval = 300
 
   return (
     <div className="carousel-container">
-      <h1 className="carousel-title" style={{ color: colorPrincipal, textAlign: "center" }}>
+      <h1 id="inicio" className="carousel-title" style={{ color: colorPrincipal, textAlign: "center" }}>
         {categoria === "congelados" ? "Marcas de Congelados" : "Marcas de Productos Secos"}
       </h1>
       <div className="carousel-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>

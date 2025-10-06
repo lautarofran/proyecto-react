@@ -1,7 +1,8 @@
 // configCategorias.js
 import fondoCongelados from './assets/fondos/congelados.jpg';
 import fondoSecos from './assets/fondos/secos.jpg';
-import logo from './assets/logo/helasur.jpg';
+import logoSeco from './assets/logo/helasur-sin-fondo-seco.png';
+import logoCong from './assets/logo/helasur-sin-fondo.png';
 
 export const categorias = {
   congelados: {
@@ -10,7 +11,8 @@ export const categorias = {
     background: fondoCongelados,
     backgroundColor: "linear-gradient(to bottom, #e0f7fa, #b2ebf2)",
     colorTexto: "#ffffff",
-    logo: logo,
+    logoCong: logoCong,
+    logoSeco: logoSeco,
     colorPrincipal: "#4682b4"
   },
   secos: {
@@ -19,7 +21,8 @@ export const categorias = {
     background: fondoSecos,
     backgroundColor: "linear-gradient(to bottom, #fff3e0, #ffe0b2)",
     colorTexto: "#000000",
-    logo: logo,
+    logoSeco: logoSeco,
+    logoCong: logoCong,
     colorPrincipal: "#c97711ff"
   }
 };

@@ -1,13 +1,18 @@
 import './BotonesBotHeader.css';
 
 const botones = [
-  { texto: "Inicio", target: "header" },
+  { texto: "Inicio", target: "inicio" },
   { texto: "Productos", target: "productos" },
   { texto: "Contacto", target: "footer" }
 ];
 
 export default function BotonesBotHeader({ colorPrincipal }) {
   const handleClick = (targetId) => {
+    if (targetId === "inicio") {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
     const elemento = document.getElementById(targetId);
     if (elemento) {
       elemento.scrollIntoView({ behavior: 'smooth' });

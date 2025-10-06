@@ -1,0 +1,348 @@
+{
+  "congelados": [
+    {
+      "id": 1,
+      "nombre": "Helado de Vainilla",
+      "precio": 250,
+      "img": "https://comedera.com/wp-content/uploads/sites/9/2022/05/Helado-de-vainilla-sin-azucar.jpg?w=500&h=500&crop=1"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    },
+    {
+      "id": 2,
+      "nombre": "Helado de Chocolate",
+      "precio": 300,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDMS3KWcYEZYgqEohyP3blGTIzXtHZ5u_VA&s"
+    }
+  ],
+  "secos": [
+    {
+      "id": 1,
+      "nombre": "Arroz",
+      "precio": 120,
+      "img": "https://www.gastronomiavasca.net/uploads/image/file/3900/arroz_basmati.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Fideos",
+      "precio": 100,
+      "img": "https://www.lacoopeencasa.coop/media/lcec/publico/articulos/2/9/a/29a90b49e07efdc003c857d2342f7f5b"
+    }
+  ]
+}
