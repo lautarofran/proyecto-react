@@ -1,21 +1,37 @@
-.header-pagina {
-  background: #282c34;
-  padding: 1rem;
-  color: white;
+nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
 
-.header-pagina button {
-  margin: 0 0.5rem;
-  padding: 0.6rem 1rem;
+nav button {
   border: none;
   border-radius: 8px;
-  background: #61dafb;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  backdrop-filter: blur(3px);
 }
 
-.header-pagina button:hover {
-  background: #21a1f1;
+nav button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  nav button {
+    width: 90%;
+    text-align: center;
+  }
 }

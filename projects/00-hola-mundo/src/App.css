@@ -10,6 +10,7 @@
 .fade-wrapper.fade-out {
   opacity: 0;
 }
+
 .productos-wrapper {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -22,4 +23,16 @@
 .productos-wrapper.slide-in {
   transform: translateY(0);
   opacity: 1;
+}
+
+.rutas {
+  transition: margin-top 0.3s ease;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productos-wrapper.slide-out {
+    transform: translateY(10px);
+  }
 }

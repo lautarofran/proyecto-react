@@ -32,10 +32,7 @@ export default function Header() {
             }
         };
 
-        // Ejecutar al cargar
         ajustarMarginRutas();
-
-        // Ejecutar al redimensionar y al hacer scroll
         window.addEventListener("resize", ajustarMarginRutas);
         window.addEventListener("scroll", ajustarMarginRutas);
 
@@ -53,27 +50,35 @@ export default function Header() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 color: config.colorTexto,
-                transition: "all 0.5s ease"
+                transition: "all 0.5s ease",
             }}
         >
-            <div className="top-bar">
-                <div className="logo" onClick={() => navigate("/congelados")} style={{ cursor: "pointer" }}>
-                    <img src={config.logoCong} alt="Logo Congelados" />
+            <div className="header-content">
+                <div className="top-bar">
+                    <div
+                        className="logo"
+                        onClick={() => navigate("/congelados")}
+                        style={{ cursor: "pointer" }}
+                    >
+                        <img src={config.logoCong} alt="Logo Congelados" />
+                    </div>
+
+                    <div className="texto-header">
+                        <h2>{config.nombre}</h2>
+                        <p>{config.descripcion}</p>
+                        <p>¡Nos adaptamos a tu necesidad!</p>
+                    </div>
+
+                    <div
+                        className="logo"
+                        onClick={() => navigate("/secos")}
+                        style={{ cursor: "pointer" }}
+                    >
+                        <img src={config.logoSeco} alt="Logo Secos" />
+                    </div>
                 </div>
 
-                <div className="texto-header">
-                    <h2>{config.nombre}</h2>
-                    <p>{config.descripcion}</p>
-                    <p>¡Nos adaptamos a tu necesidad!</p>
-                </div>
-
-                <div className="logo" onClick={() => navigate("/secos")} style={{ cursor: "pointer" }}>
-                    <img src={config.logoSeco} alt="Logo Secos" />
-                </div>
-            </div>
-
-            <div className="bot-bar">
-                <div className="nav-menu">
+                <div className="bot-bar">
                     <BotonesBotHeader colorPrincipal={config.colorPrincipal} />
                 </div>
             </div>

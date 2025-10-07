@@ -6,7 +6,7 @@ import logoCong from './assets/logo/helasur-sin-fondo.png';
 
 export const categorias = {
   congelados: {
-    nombre: "DISTRIBUIDORA DE CONGELADOS",
+    nombre: "DISTRIBUIDORA DE PRODUCTOS CONGELADOS",
     descripcion: "Contamos con amplia variedad de productos, con la mejor relación precio-calidad.",
     background: fondoCongelados,
     backgroundColor: "linear-gradient(to bottom, #e0f7fa, #b2ebf2)",

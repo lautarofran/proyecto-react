@@ -25,11 +25,12 @@ export default function BotonesBotHeader({ colorPrincipal }) {
         <button
           key={boton.texto}
           style={{
-            background: colorPrincipal,
+            background: `${colorPrincipal}`,
             borderRadius: '8px',
             color: '#fff',
             margin: '0 0.5rem',
-            padding: '0.6rem 1rem'
+            padding: '0.6rem 1rem',
+            border: '1px solid rgba(255,255,255,0.2)',
           }}
           onClick={() => handleClick(boton.target)}
         >

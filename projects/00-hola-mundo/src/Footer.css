@@ -12,19 +12,18 @@
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* tres columnas iguales */
   gap: 30px;
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
 }
 
-img{
+img {
   width: 75%;
   height: auto;
 }
 
-.footer-column .email{
+.footer-column .email {
   color: #4682b4;
 }
 
@@ -66,4 +65,16 @@ ul.contact li {
   margin-top: 20px;
   text-align: center;
   font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  img {
+    width: 50%;
+  }
 }

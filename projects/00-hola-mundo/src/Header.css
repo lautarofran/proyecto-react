@@ -1,86 +1,277 @@
+/* === HEADER GENERAL === */
 .header-pagina {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px 0; /* altura inicial */
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
-    transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-/* Header más angosto al hacer scroll */
-.header-pagina.scrolled {
-    padding: 5px 0;
+.header-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  transition: all 0.4s ease;
 }
 
-/* Texto-header desaparece */
+/* Overlay oscuro */
+.header-pagina::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.header-pagina.scrolled::before {
+  opacity: 0.8;
+}
+
+/* === TEXTO CENTRAL === */
+.texto-header {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 .header-pagina.scrolled .texto-header {
-    display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
 }
 
-/* Top-bar (logos) */
+/* === TOP BAR === */
 .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  transition: all 0.4s ease;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.top-bar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+  transition: height 0.3s ease, transform 0.3s ease;
+}
+
+/* === SCROLLED STATE === */
+.header-pagina.scrolled .header-content {
+  padding: 10px 0;
+}
+
+.header-pagina.scrolled .top-bar {
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.header-pagina.scrolled .logo img {
+  height: 70px;
+  transform: translateY(15px);
+}
+
+/* === BOT BAR === */
+.bot-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: margin 0.4s ease;
+  z-index: 2;
+}
+
+.header-pagina.scrolled .bot-bar {
+  top: -25px;
+}
+
+/* === BOTONES === */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+nav button {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+nav button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* === RESPONSIVE GENERAL === */
+@media (max-width: 768px) {
+
+  /* Header normal */
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .texto-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .texto-header p {
+    font-size: 0.9rem;
+  }
+
+  .bot-bar {
+    margin-top: 10px;
+  }
+
+  /* Estado scrolled en móviles */
+  .header-pagina.scrolled .top-bar {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-pagina.scrolled nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
+  .header-pagina.scrolled nav button {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  .header-pagina.scrolled .logo img {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .header-pagina.scrolled .bot-bar {
+    top: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .header-pagina.scrolled .logo img {
+    /* height: 50px; */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .texto-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .texto-header p {
+    font-size: 0.85rem;
+  }
+
+  nav button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.7rem;
+  }
+} 
+
+
+
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+/* == tablets / móviles grandes == */
+@media (max-width: 768px) {
+  .header-content { width: 95%; padding: 10px 0; gap:6px; }
+
+  /* LAYOUT: logos en los extremos ARRIBA, texto debajo, botones debajo */
+  .top-bar {
+    /* los logos ocupan la fila superior */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    transition: all 0.3s ease;
+  }
+  .logo img { height: 48px; }
+
+  /* texto en la siguiente fila - ocupa todo el ancho */
+  .texto-header {
+    width: 100%;
+    margin-top: 6px;
+    text-align: center;
+    color: #fff;
+  }
+  .texto-header h2 { font-size: 1.25rem; margin: 0; }
+  .texto-header p { font-size: 0.9rem; margin: 0; }
+
+  /* botones debajo */
+  .bot-bar { margin-top: 8px; }
+
+  /* === Comportamiento AL scrollear en móviles:
+       convertimos top-bar a fila compacta (logos a tiendas y botones/centro visible)
+  */
+  .header-pagina.scrolled .top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-pagina.scrolled .logo img { height: 40px; }
+
+  /* ocultar texto (ya definido arriba con display:none para scrolled) */
+  .header-pagina.scrolled .texto-header { display: none; }
+
+  /* ajustar botones cuando scrolled (mantener en fila) */
+  .header-pagina.scrolled nav {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .header-pagina.scrolled nav button { font-size: .85rem; padding: .4rem .7rem; }
 }
 
-/* Logo normal */
-.logo img {
-    height: 100px;
-    width: auto;
-    transition: height 0.3s ease;
-}
-
-/* Logo más pequeño al scrollear */
-.header-pagina.scrolled .logo img {
-    height: 70px;
-}
-
-/* Bot-bar normal */
-.bot-bar {
-    display: flex;
-    justify-content: center; /* horizontalmente centrado */
-    width: 80%;
-    transition: transform 0.3s ease, margin 0.3s ease;
-    margin-top: 20px; /* separación inicial */
-    width: auto;
-}
-
-/* Botones suben al centro cuando scrolled */
-.header-pagina.scrolled .bot-bar {
-    transform: translateY(-35px); /* sube suavemente 15px */
-    margin-top: 0;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .top-bar {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .logo img {
-        height: 90px;
-    }
-
-    .header-pagina.scrolled .logo img {
-        height: 60px;
-    }
-
-    main, .productos {
-        margin-top: 180px;
-    }
+/* == móviles pequeños == */
+@media (max-width: 480px) {
+  .logo img { height: 40px; }
+  .texto-header h2 { font-size: 1.05rem; }
+  .texto-header p { font-size: 0.8rem; }
+  nav button { font-size: .8rem; padding: .35rem .6rem; }
+  .header-pagina.scrolled .logo img { height: 36px; }
 }

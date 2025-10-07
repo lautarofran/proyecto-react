@@ -9,11 +9,11 @@ export default function PaginaCategoria({ categoria }) {
     const config = categorias[categoria] || categorias["congelados"];
 
     return (
-        <div className="pagina-categoria" style={{ background: config.backgroundColor, minHeight: "100vh" }}>
+        <div className="pagina-categoria" style={{ background: config.backgroundColor }}>
             <SlideCarousel categoria={categoria} />
             <TarjetasInfo colorPrincipal={config.colorPrincipal} categoria={categoria} />
             <Informacion />
-            <main style={{ padding: "2rem", textAlign: "center" }}>
+            <main style={{ textAlign: "center" }}>
                 <Productos categoria={categoria} colorPrincipal={config.colorPrincipal} />
             </main>
         </div>
