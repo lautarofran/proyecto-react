@@ -5,6 +5,9 @@ import Informacion from "./Informacion";
 import Productos from "./Productos";
 import { categorias } from "./ConfigCategorias";
 
+import "./PaginaCategoria.css";
+
+
 export default function PaginaCategoria({ categoria }) {
     const config = categorias[categoria] || categorias["congelados"];
 

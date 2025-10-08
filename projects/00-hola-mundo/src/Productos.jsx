@@ -3,12 +3,14 @@ import "./Productos.css";
 
 export default function Productos({ categoria, colorPrincipal }) {
   const [productos, setProductos] = useState([]);
-  const [mostrarCantidad, setMostrarCantidad] = useState(12);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [cargandoMas, setCargandoMas] = useState(false); // 👈 nuevo estado
+  const [currentPage, setCurrentPage] = useState(1); // página actual
+  const itemsPerPage = 12; // productos por página
 
   useEffect(() => {
+    setCurrentPage(1); // reinicia la página
+
     const obtenerProductos = async () => {
       try {
         setLoading(true);
@@ -28,23 +30,29 @@ export default function Productos({ categoria, colorPrincipal }) {
     obtenerProductos();
   }, [categoria]);
 
-  const verMas = () => {
-    // simulamos un pequeño delay (efecto carga)
-    setCargandoMas(true);
-    setTimeout(() => {
-      setMostrarCantidad((prev) => prev + 12);
-      setCargandoMas(false);
-    }, 700);
-  };
-
-  const verMenos = () => {
-    setMostrarCantidad(12);
-  };
 
   if (loading) return <p>Cargando productos...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  const productosVisibles = productos.slice(0, mostrarCantidad);
+  // Calcular productos visibles
+  const indexStart = (currentPage - 1) * itemsPerPage;
+  const indexEnd = indexStart + itemsPerPage;
+  const productosVisibles = productos.slice(indexStart, indexEnd);
+
+  const totalPages = Math.ceil(productos.length / itemsPerPage);
+
+  const irAPagina = (numero) => {
+    if (numero < 1 || numero > totalPages) return;
+    setCurrentPage(numero);
+
+    // Scroll suave hacia la sección de productos
+    const seccionProductos = document.getElementById("productos");
+    if (seccionProductos) {
+      seccionProductos.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
 
   return (
     <section id="productos" className="productos">
@@ -81,26 +89,39 @@ export default function Productos({ categoria, colorPrincipal }) {
         ))}
       </div>
 
-      {/* 🔽 Botones Ver más / Ver menos */}
-      <div className="contenedor-vermas">
-        {mostrarCantidad < productos.length ? (
+      {/* Paginación */}
+      <div className="contenedor-paginacion">
+        <button
+          onClick={() => irAPagina(currentPage - 1)}
+          disabled={currentPage === 1}
+          style={{ borderColor: colorPrincipal, color: colorPrincipal }}
+        >
+          ←
+        </button>
+
+        {[...Array(totalPages)].map((_, i) => (
           <button
-            onClick={verMas}
-            className="btn-vermas"
-            style={{ borderColor: colorPrincipal, color: colorPrincipal }}
-            disabled={cargandoMas}
+            key={i}
+            onClick={() => irAPagina(i + 1)}
+            className={currentPage === i + 1 ? "active" : ""}
+            style={{
+              borderColor: colorPrincipal,
+              color: currentPage === i + 1 ? "#fff" : colorPrincipal,
+              backgroundColor: currentPage === i + 1 ? colorPrincipal : "transparent",
+            }}
           >
-            {cargandoMas ? "Cargando..." : "Ver más"}
+            {i + 1}
           </button>
-        ) : (
-          <button
-            onClick={verMenos}
-            className="btn-vermas"
-            style={{ borderColor: colorPrincipal, color: colorPrincipal }}
-          >
-            Ver menos
-          </button>
-        )}
+
+        ))}
+
+        <button
+          onClick={() => irAPagina(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          style={{ borderColor: colorPrincipal, color: colorPrincipal }}
+        >
+          →
+        </button>
       </div>
     </section>
   );
